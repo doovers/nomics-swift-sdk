@@ -14,9 +14,11 @@ let package = Package(
     targets: [
         .target(
             name: "NomicsSDK",
-            dependencies: []),
+            dependencies: [],
+            path: "NomicsSDK/Sources/"),
         .testTarget(
             name: "NomicsSDKTests",
-            dependencies: ["NomicsSDK"]),
+            dependencies: ["NomicsSDK"],
+            path: "NomicsSDK/Tests/NomicsSDKTests"),
     ]
 )
